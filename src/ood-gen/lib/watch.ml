@@ -5,7 +5,7 @@ type metadata = {
   embedPath : string;
   thumbnailPath : string;
   description : string;
-  year : string;
+  year : int;
   language : string;
   category : string;
 }
@@ -16,7 +16,7 @@ type t = {
   embedPath : string;
   thumbnailPath : string;
   description : string;
-  year : string;
+  year : int;
   language : string;
   category : string;
 }
@@ -54,12 +54,12 @@ let pp ppf v =
   ; embedPath = %a
   ; thumbnailPath = %a
   ; description = %a
-  ; year = %a
+  ; year = %i
   ; language = %a
   ; category = %a
   }|}
     Pp.string v.name Pp.string v.embedPath Pp.string v.thumbnailPath Pp.string v.description
-    Pp.string v.year Pp.string v.language Pp.string v.category
+    v.year Pp.string v.language Pp.string v.category
 
 let pp_list = Pp.list pp
 
@@ -72,7 +72,7 @@ let template () =
     embedPath : string;
     thumbnailPath : string;
     description : string;
-    year : string;
+    year : int;
     language : string;
     category : string;
   }
