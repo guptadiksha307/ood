@@ -9,7 +9,7 @@ watch:
     language: English
     category: Science & Technology
   - name: Making a CRUD in OCaml
-    description: 
+    description: ""
     embedPath: /videos/embed/2c08ebdd-fdca-4865-a8fc-ecd13cd1e9f5
     thumbnailPath: /static/thumbnails/fdbd8806-49e3-45bf-96d2-ebc2d9dd91c2.jpg
     year: 2021
