@@ -9,3 +9,8 @@
  (modules scrape)
  (libraries cmdliner ood_gen)
  (flags :standard -safe-string))
+
+(executable
+ (name main)
+ (public_name spin-config)
+ (libraries yaml ezjsonm curly))

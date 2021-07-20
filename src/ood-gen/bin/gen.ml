@@ -1,4 +1,4 @@
-open Cmdliner
+open Cmdliner 
 
 let term_templates =
   [
