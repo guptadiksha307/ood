@@ -11,6 +11,6 @@
  (flags :standard -safe-string))
 
 (executable
- (name main)
- (public_name spin-config)
+ (name watch_scrape)
+ (modules watch_scrape)
  (libraries yaml ezjsonm curly))

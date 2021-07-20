@@ -1,4 +1,15 @@
 
+type t = {
+  name: string;
+  embedPath : string;
+  thumbnailPath: string;
+  description: string;
+  year: string;
+  language: string;
+  category: string;
+  
+}
+
 (* Handling Ezjsonm.get_string Parse error *)
 let get_string_from_value json =
   try
